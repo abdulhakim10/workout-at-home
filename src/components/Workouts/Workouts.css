@@ -28,6 +28,8 @@
 }
 
 .chart-container{
+    border: 1px solid purple;
+    border-radius: 10px;
     background-color: rgb(235, 235, 241);
 }
 
