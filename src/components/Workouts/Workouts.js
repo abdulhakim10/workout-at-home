@@ -5,6 +5,7 @@ import Workout from '../Workout/Workout';
 import './Workouts.css'
 const Workouts = () => {
     const [workouts, setWorkouts] = useState([]);
+    const [chart, setChart] = useState([]);
 
     useEffect(() => {
         fetch('fakeDB.json')
@@ -13,7 +14,9 @@ const Workouts = () => {
     }, [])
 
     const handlerToAddChart = (workout) => {
-        console.log(workout.id)
+        const newChart = [...chart, workout];
+        setChart(newChart);
+       
     }
 
     return (
@@ -34,7 +37,7 @@ const Workouts = () => {
             </div>
             </div>
             <div className="chart-container">
-                <Chart></Chart>
+                <Chart chart={chart}></Chart>
             </div>
         </div>
     );

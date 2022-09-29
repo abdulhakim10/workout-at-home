@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import image from '../../images/me.jpg'
 import './Chart.css'
 
-const Chart = (props) => {
+const Chart = ({chart}) => {
+    const [seconds, setSeconds] = useState(0)
+    let total = 0;
+    for(const workout of chart){
+        total = total + workout.duration;
+        // console.log(workout)
+    }
+
+    const handlerToAddBreak = second => {
+        setSeconds(second)
+    }
     return (
         <div>
                 <div className="my-info">
@@ -15,24 +25,24 @@ const Chart = (props) => {
                 <h3>Add A Break</h3>
                 <div className="break">
                     <div>
-                        <p>10s</p>
+                        <p onClick={() => handlerToAddBreak(10)}>10s</p>
                     </div>
                     <div>
-                        <p>20s</p>
+                        <p onClick={() => handlerToAddBreak(20)}>20s</p>
                     </div>
                     <div>
-                        <p>30s</p>
+                        <p onClick={() => handlerToAddBreak(30)}>30s</p>
                     </div>
                     <div>
-                        <p>40s</p>
+                        <p onClick={() => handlerToAddBreak(40)}>40s</p>
                     </div>
                     <div>
-                        <p>50s</p>
+                        <p onClick={() => handlerToAddBreak(50)}>50s</p>
                     </div>
                 </div>
                 <h3>Exercise Details</h3>
-                <h4>Exercise Time: 0</h4>
-                <h4>Break Time: 0</h4>
+                <h4>Exercise Time: {total} minutes</h4>
+                <h4>Break Time: {seconds}</h4>
         </div>
     );
 };
