@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo-wrk.jpg'
 import Chart from '../Chart/Chart';
+import Question from '../Question/Question';
 import Workout from '../Workout/Workout';   
 import './Workouts.css'
 const Workouts = () => {
@@ -22,12 +23,14 @@ const Workouts = () => {
     }
 
     return (
-        <div className='hw-container'>
+        <div>
+            <div className='hw-container'>
             <div>
             <div className="name-logo">
             <img src={logo} alt="" />
             <h1 className='name'>Workout At Home</h1>
             </div>
+            <h3 className='quote'>Choose Your Workout</h3>
             <div className="workout-container">
                 {
                     workouts.map(workout => <Workout
@@ -41,6 +44,10 @@ const Workouts = () => {
             <div className="chart-container">
                 <Chart chart={chart}></Chart>
             </div>
+        </div>
+        <div>
+            <Question></Question>
+        </div>
         </div>
     );
 };

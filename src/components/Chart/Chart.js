@@ -16,7 +16,7 @@ const Chart = ({chart}) => {
         setSeconds(getTime)
     },[])
 
-    // add a break handler
+    // handler for add a break
     const handlerToAddBreak = second => {
         setSeconds(second)
         // set break time to local storage
@@ -27,10 +27,11 @@ const Chart = ({chart}) => {
                 <div className="my-info">
                 <img src={image} alt="" />
                 <div className='my-name'>
-                <h3>Syed Abdul Hakim</h3>
+                <h3>S Abdul Hakim</h3>
                 <p><small>Dhaka, Bangladesh</small></p>
                 </div>
                </div>
+                <div className="time-detail">
                 <h3>Add A Break</h3>
                 <div className="break">
                     <div>
@@ -52,6 +53,7 @@ const Chart = ({chart}) => {
                 <h3>Exercise Details</h3>
                 <h4>Exercise Time: {total} minutes</h4>
                 <h4>Break Time: {seconds}</h4>
+                </div>
         </div>
     );
 };

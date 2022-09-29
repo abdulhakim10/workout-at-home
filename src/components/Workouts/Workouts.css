@@ -1,6 +1,7 @@
 .hw-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    margin: 15px;
 }
 
 .name-logo{
@@ -16,6 +17,9 @@
     color: rgb(59, 59, 119);
 }
 
+.quote{
+    margin-left: 75px;
+}
 .workout-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,3 +31,18 @@
     background-color: rgb(235, 235, 241);
 }
 
+    /* for medium device */
+@media screen and (min-width:688px) and (max-width: 992px) {
+    .workout-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hw-container{
+        display: block;
+    }
+    
+    @media screen and (min-width: 667px) {
+        .workout-container{
+            grid-template-columns: 1fr;
+        }
+   }
+}
