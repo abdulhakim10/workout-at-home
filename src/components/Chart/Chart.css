@@ -11,7 +11,8 @@
 }
 
 .my-name{
-    line-height:0.3;
+    margin: 0px;
+    /* line-height:0.3; */
 }
 
 .break{

@@ -26,9 +26,9 @@ const Chart = ({chart}) => {
         <div>
                 <div className="my-info">
                 <img src={image} alt="" />
-                <div className='my-name'>
-                <h3>S Abdul Hakim</h3>
-                <p><small>Dhaka, Bangladesh</small></p>
+                <div>
+                <h3 className='my-name'>S Abdul Hakim</h3>
+                <p className='my-name'><small>Dhaka, Bangladesh</small></p>
                 </div>
                </div>
                 <div className="time-detail">
