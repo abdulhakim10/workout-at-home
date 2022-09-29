@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo-wrk.jpg'
 import Workout from '../Workout/Workout';
+import image from '../../images/me.jpg'
 import './Workouts.css'
 const Workouts = () => {
 
@@ -28,7 +29,15 @@ const Workouts = () => {
             </div>
             </div>
             <div className="chart-container">
-                <h2>Workout Chart</h2>
+               <div className="my-info">
+                <img src={image} alt="" />
+                <div className='my-name'>
+                <h3>Syed Abdul Hakim</h3>
+                <p><small>Dhaka, Bangladesh</small></p>
+                </div>
+               </div>
+                
+                
             </div>
         </div>
     );
