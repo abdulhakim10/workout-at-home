@@ -2,7 +2,8 @@ import React from 'react';
 import './Workout.css'
 const Workout = (props) => {
     // console.log(props)
-    const {name, image, duration,} = props.workout;
+    const {handlerToAddChart, workout} = props
+    const {name, image, duration,} = workout;
     return (
         <div className='workout-info'>
             <img src={image} alt="" />
@@ -10,7 +11,7 @@ const Workout = (props) => {
            <h3>{name}</h3>
            <p>For Age: 18 - 35 </p>
            <p>Time Required: {duration} min </p>
-           <button>Add To Chart</button>
+           <button onClick={() => handlerToAddChart(workout)}>Add To Chart</button>
            </div>
         </div>
     );

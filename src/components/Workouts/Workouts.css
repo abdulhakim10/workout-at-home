@@ -27,18 +27,3 @@
     background-color: rgb(235, 235, 241);
 }
 
-.my-info{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 30px 20px;
-}
-
-.my-info img{
-    width: 60px;
-    border-radius: 15px;
-}
-
-.my-name{
-    line-height:0.3;
-}

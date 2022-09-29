@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo-wrk.jpg'
-import Workout from '../Workout/Workout';
-import image from '../../images/me.jpg'
+import Chart from '../Chart/Chart';
+import Workout from '../Workout/Workout';   
 import './Workouts.css'
 const Workouts = () => {
-
     const [workouts, setWorkouts] = useState([]);
 
     useEffect(() => {
@@ -12,6 +11,11 @@ const Workouts = () => {
         .then(res => res.json())
         .then(data => setWorkouts(data))
     }, [])
+
+    const handlerToAddChart = (workout) => {
+        console.log(workout.id)
+    }
+
     return (
         <div className='hw-container'>
             <div>
@@ -24,20 +28,13 @@ const Workouts = () => {
                     workouts.map(workout => <Workout
                     key={workout.id} 
                     workout={workout}
+                    handlerToAddChart={handlerToAddChart}
                     ></Workout> )
                 }
             </div>
             </div>
             <div className="chart-container">
-               <div className="my-info">
-                <img src={image} alt="" />
-                <div className='my-name'>
-                <h3>Syed Abdul Hakim</h3>
-                <p><small>Dhaka, Bangladesh</small></p>
-                </div>
-               </div>
-                
-                
+                <Chart></Chart>
             </div>
         </div>
     );
