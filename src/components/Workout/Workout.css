@@ -1,0 +1,7 @@
+.workout-info{
+    border: 1px solid purple;
+    border-radius: 8px;
+}
+.workout-info img{
+    width: 400px;
+}

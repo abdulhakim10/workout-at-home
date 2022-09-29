@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import HomeWorkout from './components/HomeWorkout/HomeWorkout';
+import Workouts from './components/Workouts/Workouts';
 
 function App() {
   return (
     <div>
-      <HomeWorkout></HomeWorkout>
+      <Workouts></Workouts>
     </div>
   );
 }

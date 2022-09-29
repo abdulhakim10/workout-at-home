@@ -1,0 +1,44 @@
+[
+  {
+    "id": "63353d20cf1f568546dc1d56",
+    "name": "Arms Workout",
+    "image": "https://www.mensjournal.com/wp-content/uploads/mf/home_workouts_main.jpg?quality=82&strip=all/",
+    "age": 33,
+    "duration": 4
+  },
+  {
+    "id": "63353d20b29e5615ba9831f3",
+    "name": "Anastasia Gordon",
+    "image": "http://placehold.it/32x32",
+    "age": 22,
+    "duration": 5
+  },
+  {
+    "id": "63353d20bce869e37842d028",
+    "name": "Gwendolyn Park",
+    "image": "http://placehold.it/32x32",
+    "age": 21,
+    "duration": 3
+  },
+  {
+    "id": "63353d20de601d42d7380f07",
+    "name": "Hogan Mcdaniel",
+    "image": "http://placehold.it/32x32",
+    "age": 26,
+    "duration": 1
+  },
+  {
+    "id": "63353d20e918330fd38cb073",
+    "name": "Pollard Mejia",
+    "image": "http://placehold.it/32x32",
+    "age": 23,
+    "duration": 2
+  },
+  {
+    "id": "63353d203491f7c1cc554045",
+    "name": "Carlene Duffy",
+    "image": "http://placehold.it/32x32",
+    "age": 24,
+    "duration": 1
+  }
+]
