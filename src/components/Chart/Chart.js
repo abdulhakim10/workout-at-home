@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import image from '../../images/me.jpg'
+
 import './Chart.css'
 
 const Chart = ({chart}) => {
@@ -9,9 +10,17 @@ const Chart = ({chart}) => {
         total = total + workout.duration;
         // console.log(workout)
     }
+    // getting break time from local storage
+    useEffect(() => {
+    const getTime =  localStorage.getItem('break-time')
+        setSeconds(getTime)
+    },[])
 
+    // add a break handler
     const handlerToAddBreak = second => {
         setSeconds(second)
+        // set break time to local storage
+        localStorage.setItem('break-time', second)
     }
     return (
         <div>

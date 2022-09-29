@@ -7,12 +7,14 @@ const Workouts = () => {
     const [workouts, setWorkouts] = useState([]);
     const [chart, setChart] = useState([]);
 
+    // for fetching data
     useEffect(() => {
         fetch('fakeDB.json')
         .then(res => res.json())
         .then(data => setWorkouts(data))
     }, [])
 
+    // handler for add to chart
     const handlerToAddChart = (workout) => {
         const newChart = [...chart, workout];
         setChart(newChart);
