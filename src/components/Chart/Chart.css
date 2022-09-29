@@ -38,6 +38,18 @@
     text-align: center;
 }
 
+.btn-toast{
+    color: white;
+    background-color: rgb(59, 59, 119);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-toast:hover{
+    background-color: rgb(150, 150, 248);
+}
+
 @media screen and (min-width: 668px) and (max-width: 1200px) {
     .my-name{
         font-size: large;

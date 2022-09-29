@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import image from '../../images/me.jpg'
-
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './Chart.css'
+
+toast.configure();
 
 const Chart = ({chart}) => {
     const [seconds, setSeconds] = useState(0)
@@ -21,6 +24,10 @@ const Chart = ({chart}) => {
         setSeconds(second)
         // set break time to local storage
         localStorage.setItem('break-time', second)
+    }
+
+    const handlerToast = () => {
+        toast('Congratulation!!! You Finish your workout.')
     }
     return (
         <div>
@@ -53,6 +60,7 @@ const Chart = ({chart}) => {
                 <h3>Exercise Details</h3>
                 <h4>Exercise Time: {total} minutes</h4>
                 <h4>Break Time: {seconds}</h4>
+                <button onClick={handlerToast} className={'btn-toast'}>Finish</button>
                 </div>
         </div>
     );
