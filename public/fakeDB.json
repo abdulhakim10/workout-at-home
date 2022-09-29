@@ -1,43 +1,43 @@
 [
   {
     "id": "63353d20cf1f568546dc1d56",
-    "name": "Arms Workout",
-    "image": "https://www.mensjournal.com/wp-content/uploads/mf/home_workouts_main.jpg?quality=82&strip=all/",
+    "name": "Upper Body Workouts",
+    "image": "https://manofmany.com/wp-content/uploads/2021/07/No-Equipment-Home-Workout-2.jpg",
     "age": 33,
     "duration": 4
   },
   {
     "id": "63353d20b29e5615ba9831f3",
-    "name": "Anastasia Gordon",
-    "image": "http://placehold.it/32x32",
+    "name": "Shoulder and Chest Workouts",
+    "image": "https://www.lepfitness.co.uk/wp-content/uploads/2017/02/the_10-minute_belly-off_workout_main-e1486814430101-1024x805.jpg",
     "age": 22,
     "duration": 5
   },
   {
     "id": "63353d20bce869e37842d028",
-    "name": "Gwendolyn Park",
-    "image": "http://placehold.it/32x32",
+    "name": "Arms and Back Workouts",
+    "image": "https://assets.gqindia.com/photos/61a320bc0cb715e3116b8655/master/pass/weekend%20workout.jpg",
     "age": 21,
     "duration": 3
   },
   {
     "id": "63353d20de601d42d7380f07",
-    "name": "Hogan Mcdaniel",
-    "image": "http://placehold.it/32x32",
+    "name": "Abs Workouts",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/athletic-man-doing-curl-ups-exercise-at-home-royalty-free-image-1585935788.jpg?crop=1.00xw:0.756xh;0,0.173xh&resize=1200:*",
     "age": 26,
     "duration": 1
   },
   {
     "id": "63353d20e918330fd38cb073",
-    "name": "Pollard Mejia",
-    "image": "http://placehold.it/32x32",
+    "name": "Legs Workout",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/joining-a-workout-group-will-keep-you-motivated-royalty-free-image-621570142-1566417396.jpg?crop=0.456xw:0.682xh;0.299xw,0.0439xh&resize=640:*",
     "age": 23,
     "duration": 2
   },
   {
     "id": "63353d203491f7c1cc554045",
-    "name": "Carlene Duffy",
-    "image": "http://placehold.it/32x32",
+    "name": "Cardio Workout",
+    "image": "https://www.shape.com/thmb/QT1Eq-X0lNvcFPBku1uOB11md3Q=/2000x1333/filters:fill(auto,1)/best-cardio-exercises-promo-2000-498cbfb8f07541b78572bf810e7fb600.jpg",
     "age": 24,
     "duration": 1
   }

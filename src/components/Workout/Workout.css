@@ -1,7 +1,27 @@
 .workout-info{
     border: 1px solid purple;
     border-radius: 8px;
+    margin: auto;
 }
 .workout-info img{
-    width: 400px;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.details{
+    margin: 15px;
+}
+
+.details button{
+    color: white;
+    background-color: rgb(59, 59, 119);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.details button:hover{
+    background-color: rgb(150, 150, 248);
 }
